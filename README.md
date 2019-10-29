@@ -1,1 +1,10 @@
-# Redux-Notes
+# What React Solves?
+
+What problem does React solve? Looking at the last few years of web development, note the problems in building and managing complex web UIs for front-end applications: React was born primarily to address those. Think of large web apps like Facebook: one of the most painful tasks when developing such applications is managing how the views change in response to data changes.
+
+Let’s refer to the official React website for more hints about the problem React addresses: “We built React to solve one problem: building large applications with data that changes over time.” Interesting! We can also look at the history of React for more information. A discussion on the React Podcast mentions that the creator of React—Jordan Walke—was solving a problem at Facebook: having multiple data sources update an autocomplete field. The data came asynchronously from a back end. It was becoming more and more complicated to determine where to insert new rows in order to reuse DOM elements. Walke decided to generate the field representation \(DOM elements\) anew each time. This solution was elegant in its simplicity: UIs as functions. Call them with data, and you get rendered views predictably.
+
+Later, it turned out that generating elements in memory is extremely fast and that the actual bottleneck is rendering in the DOM. But the React team came up with an algorithm that avoids unnecessary DOM pain. This made React very fast \(and cheap in terms of performance\). React’s splendid performance and developer-friendly, component-based architecture are a winning combination.
+
+React solved Facebook’s original problem, and many large firms agreed with this approach. React adoption is solid, and its popularity is growing every month. React emerged from Facebook and is now used not only by Facebook but also by Instagram, PayPal, Uber, Sberbank, Asana, Khan Academy,HipChat, Flipboard, and Atom, to name just a few. Most of these applications originally used something else \(typically, template engines with Angular or Backbone\) but switched to React and are extremely happy about it.
+
